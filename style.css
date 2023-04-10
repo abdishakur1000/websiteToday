@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Poppins:wght@300&family=Roboto:ital@1&display=swap');
+*{
+    font-family: 'Roboto' sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    color: #172337;
+    transition: all ease 0 3s;
+}
+button{
+    cursor: pointer;
+}
+button:hover{
+    transform: translateY(-4px);
+}
+:root{
+
+    --color1: #ff9f00;
+    --border: #172337;
+    --bg-btn: #232c3b;
+}
+.body{
+    width: 1500px;
+    margin: auto;
+}
+/* Golobal classes */
+li{
+    list-style-type: none;  
+}
+.font-12{
+    font-size: 12px;
+}
+.font-14{
+    font-size: 14px;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-18{
+    font-size: 18px;
+}
+.font-20{
+    font-size: 20px;
+}
+.font-22{
+    font-size: 22px;
+}
+.d-flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.justify-space{
+    justify-content: space-between;
+}
+/* Golobal classes */
+
+/* navbar */
+nav{
+    width: 100%;
+    height: 65px;
+    background: var(--color1);
+    align-items: center;
+    display: flex;
+    position: fixed;
+
+}
+.navbar{
+    width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 65% 20%;
+}
+.input_search{
+    padding: 8px 10px ;
+    border: 1px solid #ccc;
+    max-width: 650px;
+    background: #fff;
+    display: none;
+}
+.input_search input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.nav_li{
+    width: 100%;
+    min-width: 650px;
+}
+.nav_li ul{
+    margin: auto;
+    width: 100%;
+    min-width: 650px;
+    display: flex;
+}
+.nav_li ul li:hover{
+    transform: translateY(-4px);
+}
+.nav_li ul li a{
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+}
+#search{
+    font-size: 18px;
+    display: inline-flex;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.nav_btn button{
+    padding: 5px 20px;
+    background: var(--bg-btn);
+    border: 1px solid var(--border);
+    color: #fff;
+    margin-left: 10px;
+}
+.nav_btn button:first-child{
+    background: transparent;
+    color: #172337;
+}
+/* navbar */
+
+/* home */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    min-height: 900;
+    width: 1500px;
+    margin: auto;
+}
+.img, .img img{
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+
+}
+.inner{
+    width: 100%;
+}
+.inner h1{
+    font-size: 65px;
+    color: #ff9f00;
+    text-shadow: 0px 0px 5px gray;
+}
+.inner p{
+    width: 80%;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.inner span{
+    color: var(--color);
+}
+.inner button {
+    padding: 8px 20px;
+    border: 1px solid var(--border);
+    background-color: var(--color1);
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.products-overviw{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 500px;
+}
+.products-overviw img{
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(images/phones1.jpg);
+}
+.products-overviw .img inner d-flex{
+    width: 100%;
+    height: 65px;
+    margin: auto;
+}
+
+/* home */
